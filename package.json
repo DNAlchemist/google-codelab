@@ -1,0 +1,25 @@
+{
+  "name": "google-codelab",
+  "description": "language practicle",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "author": "DNAlchemist",
+  "contributors": [
+    {
+      "name": "DNAlchemist",
+      "email": "mikhalev.ruslan@gmail.com"
+    }
+  ],
+  "engines": {
+    "node": "~6.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "bootstrap": "npm install; nodemon index.js"
+  },
+  "dependencies": {
+    "actions-on-google": "1.6.1",
+    "express": "4.16.0"
+  }
+}

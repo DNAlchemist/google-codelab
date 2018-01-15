@@ -1,0 +1,15 @@
+version: "2"
+services:
+  node:
+    image: "vitta/nodemon:7"
+    user: "node"
+    working_dir: /home/node/app
+    volumes:
+      - ./:/home/node/app
+    ports:
+      - "5000:5000"
+    expose:
+      - "5000"
+    command: "npm run bootstrap"
+    environment:
+      - NODE_TLS_REJECT_UNAUTHORIZED = "0"
